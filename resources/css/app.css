@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger-line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #2563eb;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+.nfix {
+    @apply fixed bg-white shadow-md z-50;
+}
+.border-b-transition {
+    transition: border-bottom-width 0.3s ease-in-out;
+}
+
+.border-b-hover:hover {
+    border-bottom-width: 2px; /* Ganti sesuai kebutuhan lebar border yang diinginkan */
+}
